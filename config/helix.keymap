@@ -70,7 +70,7 @@ As such, those are in use within the default layer at this time.*/
 &trans     &kp ESC    &kp KP_SLASH     &kp RS(KP_MULTIPLY)  &kp KP_MINUS     &kp KP_PLUS                                           &trans   &trans     &trans          &trans        &trans        &trans
 &kp GRAVE  &kp LC(C)  &kp KP_NUMBER_7  &kp KP_NUMBER_8      &kp KP_NUMBER_9  &kp KP_LEFT_PARENTHESIS                               &kp N6   &kp N7     &kp N8          &kp N9        &kp N0        &kp DEL
 &trans     &kp LC(V)  &kp KP_NUMBER_4  &kp KP_NUMBER_5      &kp KP_NUMBER_6  &kp KP_RIGHT_PARENTHESIS                              &kp F6   &kp MINUS  &kp EQUAL       &kp LBKT      &kp RBKT      &kp BSLH
-&trans     &kp LC(Z)  &kp KP_NUMBER_1  &kp KP_NUMBER_2      &kp KP_NUMBER_3  &kp KP_ENTER              &trans              &trans  &kp F12  &trans     &kp PSCRN       &kp PG_DN     &kp PG_UP     &trans
+&trans     &kp LC(Z)  &kp KP_NUMBER_1  &kp KP_NUMBER_2      &kp KP_NUMBER_3  &kp KP_ENTER              &trans              &trans  &kp F12  &trans     &kp PSCRN       &kp PG_DN     &kp PG_UP     &studio_unlock
 &trans     &kp LC(Y)  &kp KP_NUMBER_0  &kp KP_NUMBER_0      &kp KP_DOT       &kp KP_ENTER              &kp K_PLAY_PAUSE    &trans  &trans   &trans     &kp K_PREVIOUS  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT
             >;
         };
