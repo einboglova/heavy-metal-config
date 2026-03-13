@@ -23,16 +23,16 @@ As such, those are in use within the default layer at this time.*/
 
 / {
     behaviors {
-        lrscrolll: lrscrolll {
+        left_encoder: left_encoder {
             compatible = "zmk,behavior-sensor-rotate";
-            label = "LRSCROLLL";
+            label = "LEFT_ENCODER";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
         };
 
-        udscrollr: udscrollr {
+        right_encoder: right_encoder {
             compatible = "zmk,behavior-sensor-rotate";
-            label = "UDSCROLLR";
+            label = "RIGHT_ENCODER";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
         };
