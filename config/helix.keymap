@@ -36,6 +36,9 @@ As such, those are in use within the default layer at this time.*/
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
         };
     };
+&soft_off {
+    hold-time-ms = <1000>; // Only turn off it the key is held for 1 seconds or longer.
+};
 
     keymap {
         compatible = "zmk,keymap";
