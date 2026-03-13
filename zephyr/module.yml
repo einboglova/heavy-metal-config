@@ -14,7 +14,7 @@ manifest:
       revision: main
       import: app/west.yml
     - name: helixec11
-      remote: helixec11_base
+      remote: helixec11
       revision: main
     - name: zmk-nice-oled
       remote: mctechnology17
