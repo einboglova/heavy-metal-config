@@ -1,9 +1,9 @@
-manifest:
+bmanifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
      # rotary encoder support based on spare pin
-    - name: helixec11
+    - name: einboglova
       url-base: https://github.com/einboglova/zmk-helix-ec11
      # support nice_oled and nice_epaper
     - name: mctechnology17
@@ -13,8 +13,8 @@ manifest:
       remote: zmkfirmware
       revision: v0.3.0
       import: app/west.yml
-    - name: helixec11
-      remote: helixec11
+    - name: zmk-helix-ec11
+      remote: einboglova
       revision: main
     - name: zmk-nice-oled
       remote: mctechnology17
