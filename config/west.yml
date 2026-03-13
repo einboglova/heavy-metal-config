@@ -19,5 +19,6 @@ bmanifest:
     - name: zmk-nice-oled
       remote: mctechnology17
       revision: main
+      import: app/west.yml
   self:
     path: config
