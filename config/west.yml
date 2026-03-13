@@ -19,6 +19,5 @@ manifest:
     - name: zmk-nice-oled
       remote: mctechnology17
       revision: main
-      import: west.yml
   self:
     path: config
