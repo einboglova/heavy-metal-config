@@ -1,3 +1,24 @@
-build:
-  settings:
-    board_root: .
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+     # rotary encoder support based on spare pin
+    - name: helixec11
+      url-base: https://github.com/einboglova/zmk-helix-ec11
+     # support nice_oled and nice_epaper
+    - name: mctechnology17
+      url-base: https://github.com/mctechnology17
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: main
+      import: app/west.yml
+    - name: helixec11
+      remote: helixec11_base
+      revision: main
+    - name: zmk-nice-oled
+      remote: mctechnology17
+      revision: main
+      import: west.yml
+  self:
+    path: config
