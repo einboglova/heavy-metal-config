@@ -41,7 +41,8 @@ As such, those are in use within the default layer at this time.*/
     hold-time-ms = <1000>; // Only turn off it the key is held for 1 seconds or longer.
 };
 
-    keymap {
+/{
+keymap {
         compatible = "zmk,keymap";
 
         default_layer {
@@ -112,4 +113,5 @@ As such, those are in use within the default layer at this time.*/
             >;
         };
     };
+  };
 };
