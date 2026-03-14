@@ -104,7 +104,7 @@ As such, those are in use within the default layer at this time.*/
 &bt BT_PRV  &trans        &trans        &trans        &trans        &trans        &kp LBRC    &kp RBRC  &trans     &trans    &trans     &trans    &trans    &trans
 &trans      &trans        &trans        &trans        &trans        &trans        &trans      &trans    &trans     &trans    &trans     &trans    &trans    &studio_unlock
             >;
-sensor-bindings = <&inc_dec_kp SCRL_RIGHT SCRL_LEFT, &inc_dec_kp SCRL_UP SCRL_DOWN>;
+sensor-bindings = <&left_encoder, &right_encoder>;
         };
     };
   };
