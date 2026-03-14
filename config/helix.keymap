@@ -18,7 +18,14 @@
 
 /* NOTE: At the time of the creation of this keymap, there are no specified codes for 'eisuu' and 'kana' input in ZMK.
 However, 'LANG1' and 'LANG2' are fully-functioning candidates for 'kana' and 'eisuu' input respectively.
-As such, those are in use within the default layer at this time.*/
+As such, those are in use within the default layer at this time.
+
+Leaving these here in case they're needed 
+sensor-bindings = <&left_encoder SCRL_RIGHT SCRL_LEFT>;
+sensor-bindings = <&right_encoder SCRL_UP SCRL_DOWN >;
+
+*/
+
 / {
     behaviors {
         left_encoder: left_encoder {
@@ -104,9 +111,6 @@ As such, those are in use within the default layer at this time.*/
 &bt BT_PRV  &trans        &trans        &trans        &trans        &trans        &kp LBRC    &kp RBRC  &trans     &trans    &trans     &trans    &trans    &trans
 &trans      &trans        &trans        &trans        &trans        &trans        &trans      &trans    &trans     &trans    &trans     &trans    &trans    &studio_unlock
             >;
-
-sensor-bindings = <&left_encoder SCRL_RIGHT SCRL_LEFT>;
-sensor-bindings = <&right_encoder SCRL_UP SCRL_DOWN >;
 
         };
     };
