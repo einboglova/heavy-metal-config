@@ -109,10 +109,10 @@ sensor-bindings = <&right_encoder SCRL_UP SCRL_DOWN >; */
 &bt BT_PRV  &trans        &trans        &trans        &trans        &trans        &kp LBRC    &kp RBRC  &trans     &trans    &trans     &trans    &trans    &trans
 &trans      &trans        &trans        &trans        &trans        &trans        &trans      &trans    &trans     &trans    &trans     &trans    &trans    &studio_unlock
             >;z
-base {
-sensor-bindings = <&inc_dec_kp &msc SCRL_RIGHT &msc SCRL_LEFT>;
-sensor-bindings = <&inc_dec_kp &msc SCRL_UP &msc SCRL_DOWN>;
-
         };
+    base {
+    sensor-bindings = <&inc_dec_kp &msc SCRL_RIGHT &msc SCRL_LEFT>;
+    sensor-bindings = <&inc_dec_kp &msc SCRL_UP &msc SCRL_DOWN>;
+     };
     };
   };
