@@ -20,8 +20,6 @@
 However, 'LANG1' and 'LANG2' are fully-functioning candidates for 'kana' and 'eisuu' input respectively.
 As such, those are in use within the default layer at this time.
 
-sensor-bindings = <&LEFT_ENCODER &RIGHT_ENCODER>;
-
 Leaving these here in case they're needed 
 sensor-bindings = <&left_encoder SCRL_RIGHT SCRL_LEFT>;
 sensor-bindings = <&right_encoder SCRL_UP SCRL_DOWN >; */
@@ -110,8 +108,10 @@ sensor-bindings = <&right_encoder SCRL_UP SCRL_DOWN >; */
 &bt BT_NXT  &out OUT_TOG  &out OUT_USB  &out OUT_BLE  &trans        &trans                              &trans     &trans    &trans     &trans    &trans    &trans
 &bt BT_PRV  &trans        &trans        &trans        &trans        &trans        &kp LBRC    &kp RBRC  &trans     &trans    &trans     &trans    &trans    &trans
 &trans      &trans        &trans        &trans        &trans        &trans        &trans      &trans    &trans     &trans    &trans     &trans    &trans    &studio_unlock
-            >;
-
+            >;z
+base {
+sensor-bindings = <&inc_dec_kp SCRL_RIGHT SCRL_LEFT>;
+sensor-bindings = <&inc_dec_kp SCRL_UP SCRL_DOWN >;
 
         };
     };
