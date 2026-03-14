@@ -112,7 +112,7 @@ sensor-bindings = <&right_encoder SCRL_UP SCRL_DOWN >;
 &trans      &trans        &trans        &trans        &trans        &trans        &trans      &trans    &trans     &trans    &trans     &trans    &trans    &studio_unlock
             >;
 
-sensor-bindings = <&inc_dec_kp SCRL_RIGHT SCRL_LEFT &inc_dec_kp SCRL_UP SCRL_DOWN>>;
+sensor-bindings = <&LEFT_ENCODER &RIGHT_ENCODER>;
         };
     };
   };
