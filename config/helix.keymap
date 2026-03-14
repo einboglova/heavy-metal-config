@@ -20,22 +20,7 @@
 However, 'LANG1' and 'LANG2' are fully-functioning candidates for 'kana' and 'eisuu' input respectively.
 As such, those are in use within the default layer at this time.*/
 
-/ {
-    behaviors {
-            left_encoder {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "LEFT_ENCODER";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
-        };
-
-        right_encoder: right_encoder {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "RIGHT_ENCODER";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-        };
-    };
+sensor-bindings = <&inc_dec_kp SCRL_RIGHT SCRL_LEFT &inc_dec_kp SCRL_UP SCRL_DOWN>;
 
 keymap {
         compatible = "zmk,keymap";
@@ -106,6 +91,8 @@ keymap {
 &bt BT_PRV  &trans        &trans        &trans        &trans        &trans        &kp LBRC    &kp RBRC  &trans     &trans    &trans     &trans    &trans    &trans
 &trans      &trans        &trans        &trans        &trans        &trans        &trans      &trans    &trans     &trans    &trans     &trans    &trans    &studio_unlock
             >;
+
+
         };
     };
   };
