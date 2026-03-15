@@ -16,13 +16,6 @@
 #define RAISE  2
 #define ADJUST 3
 
-/* NOTE: At the time of the creation of this keymap, there are no specified codes for 'eisuu' and 'kana' input in ZMK.
-However, 'LANG1' and 'LANG2' are fully-functioning candidates for 'kana' and 'eisuu' input respectively.
-As such, those are in use within the default layer at this time.
-
-Leaving these here in case they're needed 
-sensor-bindings = <&left_encoder SCRL_RIGHT SCRL_LEFT>;
-sensor-bindings = <&right_encoder SCRL_UP SCRL_DOWN >; */
 
 / {
     behaviors {
@@ -110,9 +103,9 @@ sensor-bindings = <&right_encoder SCRL_UP SCRL_DOWN >; */
 &trans      &trans        &trans        &trans        &trans        &trans        &trans      &trans    &trans     &trans    &trans     &trans    &trans    &studio_unlock
             >;z
         };
-    base {
-    sensor-bindings = <&inc_dec_kp SCRL_RIGHT SCRL_LEFT>;
-    sensor-bindings = <&inc_dec_kp SCRL_UP SCRL_DOWN>;
-     };
+            base {
+            sensor-bindings = <&left_encoder right_encoder>;
+             };
+
     };
   };
