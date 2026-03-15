@@ -104,7 +104,8 @@
             >;
         };
             base {
-            sensor-bindings = <&left_encoder right_encoder>;
+            sensor-bindings = <&left_encoder>;
+            sensor-bindings = <&right_encoder>;
              };
 
     };
