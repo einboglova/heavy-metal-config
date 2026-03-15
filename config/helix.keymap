@@ -23,14 +23,14 @@
             compatible = "zmk,behavior-sensor-rotate";
             label = "LEFT_ENCODER";
             #sensor-binding-cells = <0>;
-            bindings = <SCRL_RIGHT>, <SCRL_LEFT>;
+            bindings = <&msc SCRL_RIGHT>, <&msc SCRL_LEFT>;
         };
 
         right_encoder: right_encoder {
             compatible = "zmk,behavior-sensor-rotate";
             label = "RIGHT_ENCODER";
             #sensor-binding-cells = <0>;
-            bindings = <SCRL_UP>, <SCRL_DOWN>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
         };
     };
 
