@@ -18,22 +18,6 @@
 
 
 / {
-    behaviors {
-        left_encoder: left_encoder {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "LEFT_ENCODER";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_RIGHT &msc SCRL_LEFT>;
-        };
-
-        right_encoder: right_encoder {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "RIGHT_ENCODER";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP &msc SCRL_DOWN>;
-        };
-    };
-
  keymap {
         compatible = "zmk,keymap";
         default_layer {
@@ -103,10 +87,8 @@
 &trans      &trans        &trans        &trans        &trans        &trans        &trans      &trans    &trans     &trans    &trans     &trans    &trans    &studio_unlock
             >;
         };
-            base {
-            sensor-bindings = <&left_encoder>;
-            sensor-bindings = <&right_encoder>;
-             };
+
+sensor-bindings = <&inc_dec_msv SCRL_RIGHT SCRL_LEFT SCRL_UP SCRL_DOWN>;
 
     };
   };
