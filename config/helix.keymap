@@ -16,21 +16,6 @@
 #define RAISE  2
 #define ADJUST 3
 
-/ {
-    behaviors {
-        left_encoder: left_encoder {
-            compatible = "zmk,behavior-sensor-rotater";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
-        };
-
-        right_encoder: right_encoder {
-            compatible = "zmk,behavior-sensor-rotate";
-            #sensor-binding-cells = <0>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -49,8 +34,8 @@
 &kp LSHFT     &kp Z         &kp X     &kp C        &kp V       &kp B      &soft_off    &soft_off    &kp N      &kp M      &kp COMMA  &kp PERIOD  &kp SLASH  &kp UP_ARROW
 &kp LEFT_ALT  &kp LEFT_WIN  &kp LALT  &lt 2 MINUS  &lt 3 PLUS  &mo LOWER  &kp SPACE    &lt 1 SPACE  &mo RAISE  &kp EQUAL  &kp LEFT   &kp LEFT    &kp RIGHT  &kp DOWN
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
-
         lower_layer {
             // ---------------------------------------------------------------------------------------------------------------------------------
             // |      |      |      |      |      |      |                                  |      |      |      |      |      |      |
@@ -66,6 +51,7 @@
 &trans        &trans    &trans  &trans    &trans    &trans     &kp LPAR            &kp RPAR  &trans     &trans     &trans     &kp HOME          &kp END            &kp C_VOLUME_UP
 &trans        &trans    &trans  &trans    &trans    &trans     &kp K_PLAY_PAUSE    &trans    &trans     &trans     &kp HOME   &kp C_PREV        &kp C_NEXT         &kp C_VOL_DN
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         raise_layer {
@@ -83,6 +69,7 @@
 &trans     &kp LC(Z)  &kp KP_NUMBER_1  &kp KP_NUMBER_2      &kp KP_NUMBER_3  &kp KP_ENTER              &trans              &trans  &kp F12  &trans     &kp PSCRN       &kp PG_DN   &kp PG_UP   &kp C_VOLUME_UP
 &trans     &kp LC(Y)  &kp KP_NUMBER_0  &kp KP_NUMBER_0      &kp KP_DOT       &kp KP_ENTER              &kp K_PLAY_PAUSE    &trans  &trans   &trans     &kp K_PREVIOUS  &kp K_PREV  &kp K_NEXT  &kp C_VOLUME_DOWN
             >;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
         adjust_layer {
@@ -100,10 +87,6 @@
 &bt BT_PRV  &trans        &trans        &trans        &trans        &trans        &kp LBRC    &kp RBRC  &trans     &trans    &trans     &trans    &trans    &trans
 &trans      &trans        &trans        &trans        &trans        &trans        &trans      &trans    &trans     &trans    &trans     &trans    &trans    &studio_unlock
             >;
-        };
-
-        base {
-            sensor-bindings = <&left_encoder>, <&right_encoder>;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
     };
-};
