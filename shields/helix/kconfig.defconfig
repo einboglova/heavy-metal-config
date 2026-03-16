@@ -2,7 +2,7 @@ if adafruit_kb2040
 
 # Max 16 characters in keyboard name
 config ZMK_KEYBOARD_NAME
-    default "Stainless"
+    default "helix"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
