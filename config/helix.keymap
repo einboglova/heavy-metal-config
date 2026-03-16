@@ -103,6 +103,6 @@
         };
 base{
         sensor-bindings = <&left_encoder>, <&right_encoder>;
-    }:
+    };
     };
 };
