@@ -19,16 +19,14 @@
 / {
     behaviors {
         left_encoder: left_encoder {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            label = "LEFT_ENCODER";
-            #sensor-binding-cells = <2>;
+            compatible = "zmk,behavior-sensor-rotater";
+            #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
         };
 
         right_encoder: right_encoder {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            label = "RIGHT_ENCODER";
-            #sensor-binding-cells = <2>;
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
         };
     };
@@ -103,7 +101,8 @@
 &trans      &trans        &trans        &trans        &trans        &trans        &trans      &trans    &trans     &trans    &trans     &trans    &trans    &studio_unlock
             >;
         };
-
+base{
         sensor-bindings = <&left_encoder &right_encoder>;
+    }    
     };
 };
