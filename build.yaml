@@ -21,7 +21,7 @@
 include:
 #dongle
   - board: adafruit_kb2040
-    shield: stainless
+    shield: helix_left_dongle
   - board: adafruit_kb2040
     shield: settings_reset
 #l/r halves
