@@ -19,14 +19,18 @@
 #
 ---
 include:
+#dongle
   - board: adafruit_kb2040
-    shield: helix_left_dongle
+    shield: stainless
+  - board: adafruit_kb2040
+    shield: settings_reset
+#l/r halves
   - board: nice_nano_v2
     shield: helix_left nice_view_adapter
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   - board: nice_nano_v2
     shield: helix_right nice_view_adapter 
     cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
-  - board: adafruit_kb2040
-    shield: settings_reset
+#reset
   - board: nice_nano_v2
     shield: settings_reset
