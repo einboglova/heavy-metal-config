@@ -20,10 +20,8 @@
 ---
 include:
 #dongle
-  - board: adafruit_kb2040
+  - board: nice_nano_v2
     shield: stainless_dongle
-  - board: adafruit_kb2040
-    shield: settings_reset
 #l/r halves
   - board: nice_nano_v2
     shield: helix_left nice_view_adapter nice_view
